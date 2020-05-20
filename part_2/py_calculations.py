@@ -65,5 +65,35 @@ print(f'Środek odcinka AB: ({s_x}, {s_y})')
 ##
 a_x, a_y = 3, 2
 b_x, b_y = -1, -1
-d = (((b_x - a_x) ** 2 + (b_y - a_y) ** 2)) ** (1 / 2)
+d = ((b_x - a_x) ** 2 + (b_y - a_y) ** 2) ** (1 / 2)
 print(f'Odległość punktów A i B wynosi: {d}')
+
+# %%
+##
+a = 1
+b = 5
+c = 4
+delta = b ** 2 - 4 * a * c
+x_1 = (- b - delta ** (1 / 2)) / 2 * a
+x_2 = (- b + delta ** (1 / 2)) / 2 * a
+print(f'x1 = {x_1}\nx2 = {x_2}')
+
+# %%
+##
+value = (4 * 3 * 4.5 * 5) ** (1 / 4)
+print(f'Średnia geometryczna podanych liczb: {value :.2f}')
+
+# %%
+##
+a1 = 1
+a2 = 1 / 2
+q = a2 / a1
+sn = a1 / (1 - q)
+print(f'Suma ciągu wynosi: {sn}')
+
+# %%
+##
+a, b, c = 10, 11, 9
+sr = (a + b + c) / 3
+os = (((a - sr) ** 2 + (b - sr) ** 2 + (c - sr) ** 2) / 3) ** (1 / 2)
+print(f'Odchylenie standardowe zestawu danych wynosi: {os:.2f}')
