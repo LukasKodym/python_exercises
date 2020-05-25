@@ -24,3 +24,9 @@ ticker = [
     'PKO', 'PLY', 'PZU', 'SPL', 'TPE'
 ]
 print(list(enumerate(ticker)))
+
+# %%
+##
+password = 'cskdnjcasa#!'
+password.find('?')
+bool(password.find('?') > 0)
