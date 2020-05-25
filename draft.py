@@ -30,3 +30,18 @@ print(list(enumerate(ticker)))
 password = 'cskdnjcasa#!'
 password.find('?')
 bool(password.find('?') > 0)
+
+# %%
+##
+project_ids = {
+    '01': 'open',
+    '02': 'new',
+    '03': 'in progress',
+    '04': 'completed'
+}
+print(project_ids['02'])
+
+# %%
+##
+if project_ids['02'] != 'open':
+    project_ids['02'] = 'open'
