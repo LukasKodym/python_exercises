@@ -58,7 +58,7 @@ project_ids = {
     '03': 'in progress',
     '04': 'completed'
 }
-if project_ids['02'] != 'open':
+if project_ids['02'] != 'open': # == 'new'
     project_ids['02'] = 'open'
 
 print(project_ids)
