@@ -90,13 +90,13 @@ ogólnego przeznaczenia, o rozbudowanym pakiecie bibliotek
 standardowych, którego ideą przewodnią jest czytelność i
 klarowność kodu źródłowego."""
 words = text.split()
-result = []
-for word in words:
-    word.lower().replace(',', '').replace('.', '')
-    for word_2 in words:
-        if len(word_2) > 10:
-            result.append(word_2)
-print(result)
+# result = []
+# for word in words:
+#     word.lower().replace(',', '').replace('.', '')
+#     for word_2 in words:
+#         if len(word_2) > 10:
+#             result.append(word_2)
+# print(result)
 
 # %%
 ##
@@ -110,6 +110,22 @@ indexes = [
     'WIG20', 'WIG20dvp', 'WIG20lev', 'WIG20short', 'WIG20TR',
     'WIG30', 'WIG30TR', 'WIGdiv', 'WIGtech'
 ]
+#
+# for idx in indexes:
+#     idx.find()
 
-for idx in indexes:
-    idx.find()
+# %%
+##
+a = 'aaa'
+print(bool(isinstance(a, str)))
+
+# %%
+##
+hashtags = ['holiday', 'sport', 'fit', None, 'fashion']
+res = False
+
+for item in hashtags:
+    if item is str:
+        res = True
+        break
+print(res)
