@@ -33,7 +33,7 @@ print(sorted_names)
 ##
 from operator import itemgetter
 
-info = (('Monika', 19), ('Tomek', 21), ('Adam', 18))
+info = (('Monika', 19), ('Tomek', 21), ('Adam', 18), ('Jarek', 30))
 
 rosnaco = tuple(sorted(info, key=itemgetter(1)))
 malejaco = tuple(sorted(info, key=itemgetter(1), reverse=True))
