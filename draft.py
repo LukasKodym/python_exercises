@@ -129,3 +129,42 @@ for item in hashtags:
         res = True
         break
 print(res)
+
+# %%
+##
+for number in range(0, 1000, 1):
+    print(number)
+
+# %%
+##
+tmp = []
+number = 0
+
+while len(tmp) < 10:
+    # for number in range(0,30,1):
+    if number > 1:
+        for i in range(2, number):
+            if number % i == 0:
+                break
+        else:
+            tmp.append(str(number))
+    number += 1
+
+print(','.join(tmp))
+
+# %%
+##
+derivative = lambda w: 2 * w - 4
+print(derivative(5))
+
+# %%
+##
+n = 1
+pv = 1000
+r = 0.04
+fv = pv * (1 + r)
+
+while fv <= 2000:
+    fv = fv * (1 + r)
+    n += 1
+print(f'Wartość przyszła: {fv:.2f} PLN. Liczba okresów: {n} lat')
