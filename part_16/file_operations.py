@@ -12,3 +12,29 @@ for idx, line in enumerate(lines):
 res = sum(close) / len(close)
 
 print(f'3-dniowa średnia cena zamknięcia: {res:.2f}')
+
+# %%
+##
+
+try:
+    with open('part_16\\indeks.txt', 'r') as f:
+        lines = f.readlines()
+
+except FileNotFoundError:
+    print('Brak pliku')
+
+res = []
+try:
+    for line in lines:
+        if line.startswith('WIG'):
+            res.append(line.replace('\n', ''))
+except NameError:
+    print('Błąd zmiennej')
+print(res)
+
+#     lines = f.read().splitlines()
+#
+# res = [line for line in lines if res.startswith('WIG')]
+
+# %%
+##
