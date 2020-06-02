@@ -168,3 +168,11 @@ while fv <= 2000:
     fv = fv * (1 + r)
     n += 1
 print(f'Wartość przyszła: {fv:.2f} PLN. Liczba okresów: {n} lat')
+
+# %%
+##
+techs = ['python', 'java', 'sql', 'r', 'scala']
+
+with open('techs.txt', 'a') as file:
+    for tech in techs:
+        print(tech, file=file)
