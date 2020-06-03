@@ -1,22 +1,5 @@
 # %%
 ##
-tmp = []
-number = 0
-
-while len(tmp) < 10:
-    # for number in range(0, 50, 1):
-    if number > 1:
-        for i in range(2, number):
-            if number % i == 0:
-                break
-        else:
-            tmp.append(str(number))
-    number += 1
-    # break
-print(','.join(tmp))
-
-# %%
-##
 counter = 0
 number = 2
 prime = []
@@ -89,10 +72,6 @@ while start <= end:
     if numbers[mid] == target:
         flag = True
         break
-    # elif mid < target:
-    #     start += 1
-    # else:
-    #     end -= 1
     else:
         if numbers[mid] < target:
             start = mid + 1
