@@ -62,7 +62,12 @@ result = {
     data[0][0]: [data[1:][i][0] for i in range(len(data) - 1)],
     data[0][1]: [float(data[1:][i][1]) for i in range(len(data) - 1)]
 }
-print(data)
-print(data[1:][1])
-print(data[1:][1][0])
-# print(result)
+print(result)
+
+# %%
+##
+with open('part_16\\plw_d.csv', 'r') as file:
+    content = file.read().splitlines()
+
+data = sorted([int(line.split(',')[5]) for line in content[1:]])
+print(f'Max Vol: {max(data)}')
