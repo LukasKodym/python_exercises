@@ -69,5 +69,23 @@ print(result)
 with open('part_16\\plw_d.csv', 'r') as file:
     content = file.read().splitlines()
 
-data = sorted([int(line.split(',')[5]) for line in content[1:]])
+data = [int(line.split(',')[5]) for line in content[1:]]
 print(f'Max Vol: {max(data)}')
+
+# %%
+##
+with open('part_16\\plw_d.csv', 'r') as f:
+    content = f.read().splitlines()
+
+val = []
+data = []
+
+for line in content[1:]:
+    val.append(int(line.split(',')[5]))
+
+idx = val.index(max(val))
+
+for line in content[1:]:
+    data.append(line.split(',')[0])
+
+print(f'Data: {data[idx]}')
