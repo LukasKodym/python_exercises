@@ -77,8 +77,7 @@ print(f'Max Vol: {max(data)}')
 with open('part_16\\plw_d.csv', 'r') as f:
     content = f.read().splitlines()
 
-val = []
-data = []
+val, data = [], []
 
 for line in content[1:]:
     val.append(int(line.split(',')[5]))
