@@ -182,14 +182,14 @@ with open('techs.txt', 'a') as file:
 import csv
 
 lines = [['Bob', 'male', '27'],
-['Smith', 'male', '26'],
-['Alice', 'female', '26']]
+         ['Smith', 'male', '26'],
+         ['Alice', 'female', '26']]
 
 header = ['name', 'gender', 'age']
 
 with open("test.csv", "w", newline='') as f:
     writer = csv.writer(f, delimiter=',')
-    writer.writerow(header) # write the header
+    writer.writerow(header)  # write the header
     # write the actual content line by line
     for l in lines:
         writer.writerow(l)
