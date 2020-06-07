@@ -35,3 +35,20 @@ full_name = ('Ten Square Games', 'Playway', 'CD Projekt')
 
 new_lst = list(zip(ticker, full_name))
 print(new_lst)
+
+# %%
+##
+items = (' ', '0', 0.1, True)
+
+print(all(items))
+
+# %%
+##
+items = ('', 0.0, 0, False)
+
+print(any(items))
+
+# %%
+##
+number = 234
+print(bin(number)[2:].count('1'))

@@ -195,3 +195,11 @@ with open("test.csv", "w", newline='') as f:
         writer.writerow(l)
     # or we can write in a whole
     # writer.writerows(lines)
+
+# %%
+##
+number = 234
+binary = bin(number)
+print(type(binary))
+binary = binary[2:]
+print(binary.count('1'))
