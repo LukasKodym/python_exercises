@@ -100,5 +100,51 @@ def count_str_2(iter_obj):
             res.append(item)
     return len(res)
 
+
 # %%
 ##
+
+
+def remove_duplicates(iter_obj):
+    res = []
+    for item in set(iter_obj):
+        res.append(item)
+    return res
+
+
+"""
+def remove_duplicates(iter_obj):
+    return list(set(iter_obj))
+"""
+
+
+# %%
+##
+
+
+def is_distinct(obj):
+    if len(obj) == len(set(obj)):
+        return True
+    else:
+        return False
+
+
+"""
+def is_distinct(obj):
+    return len(obj) == len(set(obj))
+"""
+
+
+# %%
+##
+
+
+def function(idx, l=[]):
+    for i in range(idx):
+        l.append(i ** 3)
+    print(l)
+
+
+function(3)
+function(5, ['a', 'b', 'c'])
+function(6)
