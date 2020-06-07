@@ -68,10 +68,37 @@ def factorial(num):
     return res
 
 
-# example with recurrence function
+# solution with recurrence function
 
 
 def factorial_2(n):
     if n == 0:
         return 1
     return n * factorial_2(n - 1)
+
+
+# %%
+##
+
+
+def count_str(iter_obj):
+    res = []
+    for item in iter_obj:
+        if isinstance(item, str):
+            res.append(item)
+    return len(res)
+
+
+# %%
+##
+
+
+def count_str_2(iter_obj):
+    res = []
+    for item in iter_obj:
+        if isinstance(item, str) and len(item) > 2:
+            res.append(item)
+    return len(res)
+
+# %%
+##
