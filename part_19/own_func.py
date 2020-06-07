@@ -54,3 +54,24 @@ def filter_ge_6(iter_obj):
         if len(item) >= 6:
             res.append(item)
     return res
+
+
+# %%
+##
+
+
+def factorial(num):
+    res = 1
+    for i in range(1, num + 1):
+        res *= i
+        i -= 1
+    return res
+
+
+# example with recurrence function
+
+
+def factorial_2(n):
+    if n == 0:
+        return 1
+    return n * factorial_2(n - 1)
