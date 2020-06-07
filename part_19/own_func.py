@@ -33,3 +33,24 @@ def multi(iter_obj):
     return val
 
 
+# %%
+##
+
+
+def map_longest(iter_obj):
+    res = []
+    for item in iter_obj:
+        res.append(len(item))
+    return max(res)
+
+
+# %%
+##
+
+
+def filter_ge_6(iter_obj):
+    res = []
+    for item in iter_obj:
+        if len(item) >= 6:
+            res.append(item)
+    return res
