@@ -203,3 +203,10 @@ binary = bin(number)
 print(type(binary))
 binary = binary[2:]
 print(binary.count('1'))
+
+# %%
+##
+txt = 'rower'
+for i in txt:
+    print(i[-1])
+
