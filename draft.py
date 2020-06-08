@@ -207,6 +207,6 @@ print(binary.count('1'))
 # %%
 ##
 txt = 'rower'
-for i in txt:
-    print(i[-1])
+
+print(txt[::-1])
 
