@@ -14,11 +14,15 @@ def sort_list(lst):
     return sorted(lst, key=lambda x: x[1])
 
 
+my_list = [(2, 7), (7, 4), (8, 1)]
+print(sort_list(my_list))
+
 # %%
 ##
 
-
 func_2 = lambda x, y: x + y + 2
+
+print(func_2(3, 6))
 
 # %%
 ##
