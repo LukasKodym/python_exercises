@@ -7,11 +7,7 @@ print(length)
 
 # %%]
 ##
-lst = [(1, 3), (4, 2), (6, 1)]
 
-# print(lst[:3][1:])
 
-sort_list = list(map(lambda item: item[1]), lst)
-
-print(sort_list)
-
+def sort_list(lst):
+    return sorted(lst, key=lambda x: x[1])
