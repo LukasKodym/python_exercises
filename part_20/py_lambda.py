@@ -14,3 +14,4 @@ lst = [(1, 3), (4, 2), (6, 1)]
 sort_list = list(map(lambda item: item[1]), lst)
 
 print(sort_list)
+
