@@ -9,3 +9,9 @@ def file_gen(lst):
 
 # %%
 ##
+
+
+def enum(lst):
+    counter = range(len(lst))
+    for item in lst:
+        yield tuple(counter) + item
