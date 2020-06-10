@@ -213,3 +213,26 @@ print(txt[::-1])
 # %%
 ##
 print(4 // 3)
+
+# %%
+##
+lst = [2, 6, 1, 9, 5]
+
+
+def dub(ls):
+    res = []
+    for i in ls:
+        var = (i * 2)
+        res.append(var)
+    return res
+
+
+print(dub(lst))
+
+
+# %%
+##
+
+
+def func_1(a, b):
+    return a + b + 2
