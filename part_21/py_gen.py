@@ -7,11 +7,13 @@ def file_gen(lst):
         if item.endswith('.txt'):
             yield item
 
+
 # %%
 ##
 
 
 def enum(lst):
-    counter = range(len(lst))
+    counter = 0
     for item in lst:
-        yield tuple(counter) + item
+        yield counter, item
+        counter += 1
