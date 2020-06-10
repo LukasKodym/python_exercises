@@ -54,3 +54,33 @@ stocks = [
 res = list(filter(lambda item: item['indeks'] == 'mWIG40', stocks))
 
 print(res)
+
+# %%
+##
+stocks = [
+    {'indeks': 'mWIG40', 'name': 'TEN', 'price': 304},
+    {'indeks': 'mWIG40', 'name': 'PLW', 'price': 309},
+    {'indeks': 'sWIG80', 'name': 'BBT', 'price': 22}
+]
+
+res = list(map(lambda x: x['indeks'] == 'mWIG40', stocks))
+
+print(res)
+
+# %%
+##
+items = ['P-1', 'R-2', 'D-4', 'F-6']
+
+# new_items = list(map(lambda item: str.replace(item, '-', ''), items))
+new_items = list(map(lambda item: item.replace('-', ''), items))
+
+print(new_items)
+
+# %%
+##
+num1 = [4, 2, 6, 2, 11]
+num2 = [5, 2, 3, 3, 9]
+
+res = list(map(lambda n1, n2: n1 % n2, num1, num2))
+
+print(res)

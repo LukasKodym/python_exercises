@@ -210,3 +210,6 @@ txt = 'rower'
 
 print(txt[::-1])
 
+# %%
+##
+print(4 // 3)
