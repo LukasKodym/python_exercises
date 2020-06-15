@@ -19,7 +19,6 @@ print(sort_list(my_list))
 
 # %%
 ##
-
 func_2 = lambda x, y: x + y + 2
 
 print(func_2(3, 6))
