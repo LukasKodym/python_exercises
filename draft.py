@@ -236,3 +236,11 @@ print(dub(lst))
 
 def func_1(a, b):
     return a + b + 2
+
+
+# %%
+##
+
+
+string = '     @@@Lukas and Mark@@@     '
+print(string.strip())
