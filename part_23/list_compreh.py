@@ -23,3 +23,21 @@ rate = [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07]
 
 res = [round(pv * (1 + item) ** n, 2) for item in rate]
 print(res)
+
+# %%
+##
+pv = 1000
+n = 10
+rate = [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07]
+
+res = [round(pv * ((1 + item) ** n - 1), 2) for item in rate]
+print(res)
+
+# %%
+##
+with open('part_23/plw.txt', 'r') as f:
+    lines = f.read().splitlines()
+
+res = [line.split() for line in lines if line.strip() != '']
+
+print(res)

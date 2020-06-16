@@ -244,3 +244,17 @@ def func_1(a, b):
 
 string = '     @@@Lukas and Mark@@@     '
 print(string.strip())
+
+# %%
+##
+pv = 1000
+n = 10
+rate = [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07]
+
+res = []
+
+for r in rate:
+    a = round(pv * (1 + r) ** n, 2)
+    res.append(a)
+
+print(res)
