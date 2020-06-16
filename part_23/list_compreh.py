@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # %%
 ##
 with open('part_23/gaming.txt', 'r') as file:
@@ -39,5 +41,24 @@ with open('part_23/plw.txt', 'r') as f:
     lines = f.read().splitlines()
 
 res = [line.split() for line in lines if line.strip() != '']
+
+print(res)
+
+# %%
+##
+with open('part_23/plw.txt', 'r') as f:
+    lines = f.read()
+
+res = lines.lower().replace('.', '').replace(',', '').split()
+
+res = sorted([r for r in res if len(r) > 7])
+
+print(res)
+
+# %%
+##
+data = dict(zip(('a', 'b', 'c', 'd', 'e', 'f'), (1, 2, 3, 4, 5, 6)))
+
+res = [[x, y] for (x, y) in data.items()]
 
 print(res)
