@@ -2,6 +2,10 @@
 ##
 import calendar as cal
 from datetime import date as dt
+import re
+import string as st
+from collections import Counter
+
 
 # %%
 ##
@@ -17,18 +21,65 @@ print(s)
 
 # %%
 ##
-d_1 = dt.date(2020, 6, 1)
-d_2 = dt.date(2020, 7, 18)
+d_1 = dt(2020, 6, 1)
+d_2 = dt(2020, 7, 18)
 
 print(d_2 - d_1)
 
+# %%
+##
+string = 'Python 3.8'
+
+p = re.compile(pattern=r"\d").findall(string)
+
+print(p)
+
+# different solution
+
+result = re.findall(pattern=r"\d", string=string)
+print(result)
 
 # %%
 ##
-import re
+string = '!@#$%^&45wc'
 
-string = 'Python 3.8'
+res = re.findall(r"\w", string=string)
 
-p = re.compile('\d')
+print(res)
 
-print(p.findall(string))
+# %%
+##
+raw_text = "Wyślij email na adres: info@template.com lub sales-info@template.it"
+
+res = re.findall(r"[\w.-]+@[\w.-]+", raw_text)
+
+print(res)
+
+# %%
+##
+text = 'Programowanie w języku Python - od A do Z'
+
+res = re.split(r"\s+", text)
+
+print(res)
+
+# %%
+##
+res = st.ascii_letters
+
+print(res)
+
+# %%
+##
+items = ['YES', 'NO', 'NO', 'YES', 'EMPTY', 'YES', 'NO']
+
+res = Counter(items)
+
+print(res)
+
+# or
+counter = Counter()
+items = ['YES', 'NO', 'NO', 'YES', 'EMPTY', 'YES', 'NO']
+for item in items:
+    counter[item] += 1
+print(counter)
