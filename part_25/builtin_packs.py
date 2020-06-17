@@ -25,3 +25,10 @@ print(d_2 - d_1)
 
 # %%
 ##
+import re
+
+string = 'Python 3.8'
+
+p = re.compile('\d')
+
+print(p.findall(string))
