@@ -122,7 +122,7 @@ print(items)
 ##
 ids = ['001', '003', '011']
 
-pickle.dump(ids, open('data.pickle', 'wb'))
+pickle.dump(ids, open('part_25/data.pickle', 'wb'))
 
 # %%
 ##
