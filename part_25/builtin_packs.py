@@ -5,7 +5,10 @@ from datetime import date as dt
 import re
 import string as st
 from collections import Counter
-
+import math
+import random
+import pickle
+import json
 
 # %%
 ##
@@ -83,3 +86,46 @@ items = ['YES', 'NO', 'NO', 'YES', 'EMPTY', 'YES', 'NO']
 for item in items:
     counter[item] += 1
 print(counter)
+
+
+# %%
+##
+
+
+def sigmoid(x):
+    func = 1 / (1 + math.exp(-x))
+    return func
+
+
+# %%
+##
+
+
+random.seed(12)
+
+items = ['python', 'java', 'sql', 'c++', 'c']
+
+print(random.choice(items))
+
+# %%
+##
+
+
+random.seed(15)
+
+items = ['python', 'java', 'sql', 'c++', 'c']
+random.shuffle(items)
+
+print(items)
+
+# %%
+##
+ids = ['001', '003', '011']
+
+pickle.dump(ids, open('data.pickle', 'wb'))
+
+# %%
+##
+stocks = {'PLW': 360.0, 'TEN': 320.0, 'CDR': 329.0}
+
+print(json.dumps(stocks, sort_keys=True, indent=4))
