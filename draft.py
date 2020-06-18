@@ -258,3 +258,20 @@ for r in rate:
     res.append(a)
 
 print(res)
+
+
+# %%
+## zadanie matura 2020
+
+
+def czy_podobne(n, A, B, k):
+    for i in range(1, k + 1):
+        if A[i] != B[n - k + i]:
+            return 'FAŁSZ'
+    for i in range(k + 1, n + 1):
+        if A[i] != B[i - k]:
+            return 'FAŁSZ'
+    return 'PRAWDA'
+
+
+czy_podobne(3, [5, 7, 9], [5, 7, 9], 0)
