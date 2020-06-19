@@ -22,6 +22,8 @@ y_pred = [10.2, 10.4, 10.8, 11.0]
 
 def mae(y_true, y_pred):
     sum = 0
+    # for i, j in zip(y_true, y_pred):
+    #     sum += abs(j - i)
     for i in zip(y_true, y_pred):
         sum += abs(i[1] - i[0])
     return round(sum / len(y_pred), 3)

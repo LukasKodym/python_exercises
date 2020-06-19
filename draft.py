@@ -282,7 +282,13 @@ y_true = [10, 10.5, 11.2, 10.4]
 y_pred = [10.2, 10.4, 10.8, 11.0]
 
 for i, j in zip(y_true, y_pred):
-    print(i, j)
+    sum = 0
+    sum += abs(i - j)
+print(sum)
+
+print("\n")
 
 for i in zip(y_true, y_pred):
-    print(i[0], i[1])
+    p = 0
+    p += abs(i[0] - i[1])
+print(p)
