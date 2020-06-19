@@ -275,3 +275,14 @@ def czy_podobne(n, A, B, k):
 
 
 czy_podobne(3, [5, 7, 9], [5, 7, 9], 0)
+
+# %%
+##
+y_true = [10, 10.5, 11.2, 10.4]
+y_pred = [10.2, 10.4, 10.8, 11.0]
+
+for i, j in zip(y_true, y_pred):
+    print(i, j)
+
+for i in zip(y_true, y_pred):
+    print(i[0], i[1])
