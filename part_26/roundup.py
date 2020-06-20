@@ -44,6 +44,7 @@ def mse(yt, yp):
 
 mse(y_true, y_pred)
 
+
 # %%
 ##
 
@@ -51,5 +52,30 @@ mse(y_true, y_pred)
 def relu(x):
     return max(x, 0)
 
+
 # %%
 ##
+items = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+
+def flatten(lst):
+    res = []
+    for i in lst:
+        for j in i:
+            res.append(j)
+    return res
+
+
+flatten(items)
+
+
+# or
+
+def flatten_2(lst):
+    res = []
+    for item in lst:
+        res.extend(item)
+    return res
+
+
+flatten_2(items)
