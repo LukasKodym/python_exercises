@@ -30,3 +30,16 @@ def mae(y_true, y_pred):
 
 
 mae(y_true, y_pred)
+
+# %%
+##
+y_true = [10, 10.5, 11.2, 10.4]
+y_pred = [10.2, 10.4, 10.8, 11.0]
+
+
+def mse(yt, yp):
+    res = sum([pow(j - i, 2) for i, j in zip(yt, yp)])
+    return round(res / len(yt), 3)
+
+
+mse(y_true, y_pred)
