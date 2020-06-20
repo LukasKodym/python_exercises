@@ -43,3 +43,13 @@ def mse(yt, yp):
 
 
 mse(y_true, y_pred)
+
+# %%
+##
+
+
+def relu(x):
+    return max(x, 0)
+
+# %%
+##
