@@ -79,3 +79,22 @@ def flatten_2(lst):
 
 
 flatten_2(items)
+
+# %%
+##
+
+items = [3, 4, 0, 2, 0, 5, 1, 6, 2]
+
+
+def transfer_zeros(lst):
+    res = []
+    for item in lst:
+        if item != 0:
+            res.append(item)
+    for item in lst:
+        if item == 0:
+            res.insert(len(res), item)
+    return res
+
+
+transfer_zeros(items)

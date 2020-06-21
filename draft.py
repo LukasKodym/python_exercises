@@ -259,22 +259,21 @@ for r in rate:
 
 print(res)
 
-
 # %%
 ## zadanie matura 2020
 
 
-def czy_podobne(n, A, B, k):
-    for i in range(1, k + 1):
-        if A[i] != B[n - k + i]:
-            return 'FAŁSZ'
-    for i in range(k + 1, n + 1):
-        if A[i] != B[i - k]:
-            return 'FAŁSZ'
-    return 'PRAWDA'
-
-
-czy_podobne(3, [5, 7, 9], [5, 7, 9], 0)
+# def czy_podobne(n, A, B, k):
+#     for i in range(1, k + 1):
+#         if A[i] != B[n - k + i]:
+#             return 'FAŁSZ'
+#     for i in range(k + 1, n + 1):
+#         if A[i] != B[i - k]:
+#             return 'FAŁSZ'
+#     return 'PRAWDA'
+#
+#
+# czy_podobne(3, [5, 7, 9], [5, 7, 9], 0)
 
 # %%
 ##
@@ -292,3 +291,22 @@ for i in zip(y_true, y_pred):
     p = 0
     p += abs(i[0] - i[1])
 print(p)
+
+# %%
+##
+items = [3, 4, 0, 2, 0, 5, 1, 6, 2]
+
+
+def transfer_zeros(items):
+    result = []
+    counter = 0
+    for item in items:
+        if item == 0:
+            counter += 1
+        else:
+            result.append(item)
+    result.extend([0] * counter)
+    return result
+
+
+transfer_zeros(items)
