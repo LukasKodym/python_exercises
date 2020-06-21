@@ -327,3 +327,19 @@ def arange(start, stop, step=1):
 
 
 arange(1, 6, 3)
+
+# %%
+##
+l_1 = [[1], [2]]
+l_2 = [[3], [4]]
+
+
+def concat(l1, l2):
+    res = []
+    for i, j in zip(l1, l2):
+        con = i + j
+        res.append(con)
+    return res
+
+
+concat(l_1, l_2)
