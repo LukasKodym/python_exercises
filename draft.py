@@ -310,3 +310,20 @@ def transfer_zeros(items):
 
 
 transfer_zeros(items)
+
+
+# %%
+##
+
+
+def arange(start, stop, step=1):
+    collect = start
+    res = []
+    while collect < stop:
+        if stop > start:
+            res.append(collect)
+            collect += step
+        return res
+
+
+arange(1, 6, 3)
