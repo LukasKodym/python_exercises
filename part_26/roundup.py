@@ -115,3 +115,33 @@ def euclidean_distance(l_1, l_2):
 
 
 euclidean_distance(x, y)
+
+
+# %%
+##
+
+
+def identity(n):
+    res = []
+    count = 0
+    for i in range(n):
+        foo = list(0 for j in range(n))
+        foo[count] += 1
+        res.append(foo)
+        count += 1
+    return res
+
+
+identity(5)
+
+print('\n')
+
+
+def identity_2(m):
+    array = [[0] * m for i in range(m)]
+    for idx, item in enumerate(array):
+        item[idx] = 1
+    return array
+
+
+identity_2(6)
