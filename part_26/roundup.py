@@ -98,3 +98,20 @@ def transfer_zeros(lst):
 
 
 transfer_zeros(items)
+
+# %%
+##
+x = [0, 3]
+y = [4, 0]
+
+
+def euclidean_distance(l_1, l_2):
+    sum = 0
+    for i, j in zip(l_1, l_2):
+        sum += pow(j - i, 2)
+    return pow(sum, 1 / 2)
+
+    # return [pow(sum(pow(j - i, 2)), 1 / 2) for i, j in zip(l_1, l_2)]
+
+
+euclidean_distance(x, y)
