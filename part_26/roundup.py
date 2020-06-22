@@ -193,8 +193,11 @@ transpose([[1, 2, 3], [4, 5, 6]])
 def max_prob(array):
     res = []
     for i in array:
-        for j in i:
-            return max(j)
+        max_val = max(i)
+        for val in i:
+            if val == max_val:
+                res.append([val])
+    return res
 
 
-max_prob([[0.3, 0.4, 0.3], [[0.0, 0.1, 0.9]]])
+max_prob([[0.3, 0.4, 0.3], [0.0, 0.1, 0.9]])
