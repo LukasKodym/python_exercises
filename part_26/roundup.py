@@ -180,9 +180,7 @@ trace([[3, 4, 5], [5, 2, 1], [5, 7, 2]])
 
 
 def transpose(array):
-    res = []
-    for i, j in array:
-        print([j[i]])
+    return [[array[j][i] for j in range(len(array))] for i in range(len(array[0]))]
 
 
 transpose([[1, 2, 3], [4, 5, 6]])
