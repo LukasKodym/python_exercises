@@ -161,3 +161,18 @@ def fill_value(h, w, v):
 
 fill_value(5, 9, '*')
 
+
+# %%
+##
+
+
+def trace(array):
+    return sum([item[idx] for idx, item in enumerate(array)])
+
+
+trace([[1]])
+trace([[1, 2], [4, 2]])
+trace([[3, 4, 5], [5, 2, 1], [5, 7, 2]])
+
+# %%
+##
