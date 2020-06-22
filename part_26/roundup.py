@@ -174,5 +174,15 @@ trace([[1]])
 trace([[1, 2], [4, 2]])
 trace([[3, 4, 5], [5, 2, 1], [5, 7, 2]])
 
+
 # %%
 ##
+
+
+def transpose(array):
+    res = []
+    for i, j in array:
+        print([j[i]])
+
+
+transpose([[1, 2, 3], [4, 5, 6]])
