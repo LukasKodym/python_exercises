@@ -145,3 +145,19 @@ def identity_2(m):
 
 
 identity_2(6)
+
+
+# %%
+##
+
+
+def fill_value(h, w, v):
+    # return [[v] * w for i in range(h)]
+    res = []
+    for i in range(h):
+        res.append([v for j in range(w)])
+    return res
+
+
+fill_value(5, 9, '*')
+
