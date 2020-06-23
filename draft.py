@@ -343,3 +343,9 @@ def concat(l1, l2):
 
 
 concat(l_1, l_2)
+
+# %%
+##
+array = [[0.3, 0.4, 0.3], [0.0, 0.1, 0.9]]
+
+print(max(array[1]))

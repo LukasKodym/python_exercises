@@ -220,3 +220,25 @@ def detect_class(array):
 
 
 detect_class([[0.3, 0.4, 0.3], [0.0, 0.1, 0.9]])
+
+
+# %%
+##
+
+
+def dot_product(v, w):
+    return sum(i * j for i, j in zip(v, w))
+
+
+# %%
+##
+
+
+def count_none(lst):
+    counter = 0
+    for i in lst:
+        if i == None:
+        # if not i:
+            counter += 1
+    return counter
+
