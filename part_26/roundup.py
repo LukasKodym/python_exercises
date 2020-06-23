@@ -201,3 +201,22 @@ def max_prob(array):
 
 
 max_prob([[0.3, 0.4, 0.3], [0.0, 0.1, 0.9]])
+
+
+# %%
+##
+
+
+def detect_class(array):
+    res = []
+    for i in array:
+        max_val = max(i)
+        empty = [0] * len(i)
+        for idx, val in enumerate(i):
+            if val == max_val:
+                empty[idx] = 1
+                res.append(empty)
+    return res
+
+
+detect_class([[0.3, 0.4, 0.3], [0.0, 0.1, 0.9]])
