@@ -238,7 +238,27 @@ def count_none(lst):
     counter = 0
     for i in lst:
         if i == None:
-        # if not i:
+            # if not i:
             counter += 1
     return counter
 
+
+# %%
+##
+
+
+def top_n(lst, n):
+    res = []
+    lst.sort(reverse=True)
+    for idx, i in enumerate(lst):
+        if idx in range(n):
+            res.append(i)
+    return res
+
+
+top_n([2, 3, 4, 67, 8, 1, 2, 6, 3, 9, 0, 23], 3)
+
+"""
+    items.sort(reverse=True)
+    return items[:n]
+"""
